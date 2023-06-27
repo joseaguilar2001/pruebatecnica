@@ -1,0 +1,24 @@
+/*
+Created: 27/06/2023
+Modified: 27/06/2023
+Model: MySQL 8.0
+Database: MySQL 8.0
+*/
+
+-- Create tables section -------------------------------------------------
+
+-- Table personas
+
+CREATE TABLE `personas`
+(
+  `id` Int UNSIGNED NOT NULL AUTO_INCREMENT,
+  `nombres` Varchar(150) NOT NULL,
+  `apellido` Varchar(150) NOT NULL,
+  `hpdth` Date NOT NULL,
+  `genero` Varchar(20) NOT NULL,
+  `direccion` Varchar(250) NOT NULL,
+  `estadoCivil` Varchar(20) NOT NULL,
+  `dpi` Varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+)
+;

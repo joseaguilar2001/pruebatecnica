@@ -30,7 +30,7 @@ app.use(
     })
 )
 
-app.use('/personaes', personasRoute);
+app.use('/personas', personasRoute);
 
 app.listen(app.get('port'), () => {
     console.log('Port: ', app.get('port'));

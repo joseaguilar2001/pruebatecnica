@@ -59,7 +59,7 @@ const List = () => {
     return(
         <div>
             <div className="flex flex-column md:flex-row justify-content-between">
-                <Button className="p-button-raised p-button-rounded mb-3 p-button-info" type="button" icon="pi pi-plus" label="Agregar kardex" 
+                <Button className="p-button-raised p-button-rounded mb-3 p-button-info" type="button" icon="pi pi-plus" label="Agregar persona" 
                 onClick={()=>setIsVisible(true)}/>
             </div>
             <Panel

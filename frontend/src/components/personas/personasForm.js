@@ -10,7 +10,7 @@ import moment from "moment";
 import { PersonasContext } from "../../context/PersonasContext";
 
 const Form = (props) => {
-    const [isVisible, setIsVisible] = props;
+    const {isVisible, setIsVisible}= props;
     const [isVisibleDelete, setIsVisibleDelete] = useState(false);
 
     const {
@@ -191,7 +191,7 @@ const Form = (props) => {
                 </div><br />
                 <div className="p-float-label">
                     <Dropdown value={personaData.estadoCivil} options={estadosCivil} optionLabel="nombre" optionValue="nombre" 
-                    onChange={(e) => updateField(e.target.value, "nombre")} filter showClear filterBy="nombre" placeholder="Seleccione su estado civil"/>
+                    onChange={(e) => updateField(e.target.value, "estadoCivil")} filter showClear filterBy="nombre" placeholder="Seleccione su estado civil"/>
                     <label>Estado civil*</label>
                 </div><br />
                 <div className="p-float-label">
